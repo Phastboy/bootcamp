@@ -8,7 +8,7 @@ app.get('/', (req,res)=>{
 	<form action="/answer" method="POST">
 		<label for="skyColor">What is the color of the sky on a bright sunny day?</label>
 		<input name="skyColor" autocomplete="off"/>
-		<input type="submit" name="submit answer"/>
+		<input type="submit"/>
 	</form>
 		`);
 });
