@@ -6,8 +6,8 @@ app.use(express.urlencoded({extended: false}))
 app.get('/', (req,res)=>{
 	res.send(`
 	<form action="/answer" method="POST">
-		<label for="skyColor">What is the color of the sky on a bright sunny day?</label>
-		<input name="skyColor" autocomplete="off"/>
+		<label for="skyColor">What is the color of the sky on a bright sunny day?</label><br/>
+		<input name="skyColor" autocomplete="off"/><br/>
 		<input type="submit"/>
 	</form>
 		`);
