@@ -8,5 +8,5 @@ console.log(first, second);
 
 writeFileSync(
 	'./src/result.txt',
-	`the result: ${first}, ${second}`,
+	`the result: ${first}, ${second}`, {flag:'a'}
 );

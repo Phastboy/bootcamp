@@ -11,7 +11,7 @@ readFile('./src/01.txt', 'utf8', (err, result)=>{
 			console.log(err)
 		}
 		let second=result;
-		writeFile('./src/asyncResult.txt', `the result: ${first}, ${second}`, ()=>{
+		writeFile('./src/asyncResult.txt', `the result: ${first}, ${second}`, {flag:'a'}, ()=>{
 			err? console.log(err) : console.log(result);
 		});
 	});
